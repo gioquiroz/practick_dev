@@ -1,3 +1,41 @@
 * {
     font-family: "Kanit", sans-serif;
 }
+.welcomePractick {
+    background-image: linear-gradient(rgba(0,0,0, .73), rgba(0,0,0, .73)), url(https://assets.isu.pub/document-structure/221201212600-5e1568c125bd8d322c8167bf051c52ea/v1/5b9a60a79e9666b28d19871724829de3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+div > h1, span {
+    color: white;
+    filter: drop-shadow(2px 3px 1px rgba(255,255,255, .3));
+}
+div > h1 {
+    font-size: 3.2rem!important;
+}
+div > h1 ~ span {
+    font-size: 1.5rem;
+}
+.form-logIn {
+    background-image: url(img/bg-formLogIn.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.locked-bg {
+    background-color: rgba(255,255,255, .25);
+    filter: blur(1px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.form-logIn > form {
+    z-index: 2;
+}
+.form-logIn > form label {
+}

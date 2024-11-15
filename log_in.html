@@ -22,20 +22,24 @@
                 <span>Tu autogestor de practicas estudiantiles.</span>
             </div>
             <div class="col-md-6 d-sm-none d-md-flex flex-column align-items-center justify-content-center form-logIn">
+                <span class="locked-bg"></span>
                 <form action="POST" class="d-flex flex-column">
                     <span class="logoCiaf"></span>
-                    <label for="">Correo CIAF
+                    <label for="" class="d-flex flex-column">Correo CIAF
                         <input type="email" name="correo" id="usuEmail">
                     </label>
-                    <label for="">Clave
+                    <label for="" class="d-flex flex-column">Clave
                         <input type="password" name="contrasena" id="usuPswd">
                     </label>
-                    <select name="tipoUsuario" id="tipoUsu">
-                        <option value="Empresa">Empresa</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Estudiante">Admin. Universidad</option>
-                    </select>
+                    <div class="optionsToLog">
+                        <h6>Soy</h6>
+                        <select name="tipoUsuario" id="tipoUsu">
+                            <option value="Empresa">Empresa</option>
+                            <option value="Docente">Docente</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Estudiante">Admin. Universidad</option>
+                        </select>
+                    </div>
                     <button class="logIn">Ingresar</button>
                 </form>
             </div>

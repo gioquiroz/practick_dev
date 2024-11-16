@@ -37,5 +37,3 @@ div > h1 ~ span {
 .form-logIn > form {
     z-index: 2;
 }
-.form-logIn > form label {
-}

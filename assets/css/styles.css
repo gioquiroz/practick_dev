@@ -2,26 +2,34 @@
     --blue1: #001550;
     --white: #FFFFFF;
 }
+
 * {
     font-family: "Kanit", sans-serif;
     color: var(--blue1);
 }
+
 .welcomePractick {
-    background-image: linear-gradient(rgba(0,0,0, .73), rgba(0,0,0, .73)), url(https://assets.isu.pub/document-structure/221201212600-5e1568c125bd8d322c8167bf051c52ea/v1/5b9a60a79e9666b28d19871724829de3.jpeg);
+    /* background-image: linear-gradient(rgba(0,0,0, .73), rgba(0,0,0, .73)), url(https://assets.isu.pub/document-structure/221201212600-5e1568c125bd8d322c8167bf051c52ea/v1/5b9a60a79e9666b28d19871724829de3.jpeg); */
+    background-image: url(https://www.ciaf.edu.co/assets/image/inves-innova.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-div > h1, span {
+
+div>h1,
+span {
     color: white;
-    filter: drop-shadow(2px 3px 1px rgba(255,255,255, .3));
+    filter: drop-shadow(2px 3px 1px rgba(255, 255, 255, .3));
 }
-div > h1 {
-    font-size: 3.2rem!important;
+
+div>h1 {
+    font-size: 3.2rem !important;
 }
-div > h1 ~ span {
+
+div>h1~span {
     font-size: 1.5rem;
 }
+
 .form-logIn {
     background-image: url(../img/bg-formLogIn.jpeg);
     background-repeat: no-repeat;
@@ -29,17 +37,20 @@ div > h1 ~ span {
     background-size: cover;
     position: relative;
 }
-form  {
+
+form {
     border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0, .5);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
 }
-form > label > input {
+
+form>label>input {
     height: 45px;
     border-radius: 3px;
-    border: 1px solid rgba(0,0,0, .3)
+    border: 1px solid rgba(0, 0, 0, .3)
 }
+
 .locked-bg {
-    background-color: rgba(255,255,255, .25);
+    background-color: rgba(255, 255, 255, .25);
     filter: blur(1px);
     position: absolute;
     top: 0;
@@ -48,9 +59,11 @@ form > label > input {
     height: 100%;
     z-index: 1;
 }
-.form-logIn > form {
+
+.form-logIn>form {
     z-index: 2;
 }
+
 .logoLogIn {
     background-image: url(https://ciaf.edu.co/landing-contaduria/dist/imagenes/logo_ciaf_web.webp);
     background-repeat: no-repeat;
@@ -58,6 +71,7 @@ form > label > input {
     width: 25vw;
     height: 25vh;
 }
+
 .btn-logIn {
     width: 50%;
     height: 45px;

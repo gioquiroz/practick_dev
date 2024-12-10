@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dashboard - Estudiante</title>
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <header>
+            <nav class="d-flex justify-content-between align-items-center py-3">
+                <div class="content-logo d-flex align-items-center">
+                    <div class="logo">
+                        <span class="icon-logo"></span>
+                        <!-- PRACTICK -->
+                    </div>
+                    <input type="search" name=Buscar" id="" class="inpt-search" placeholder="Buscar...">
+                </div>
+                <div class="content-nav d-flex justify-content-end  align-items-center w-25">
+                    <div class="util-user d-flex align-items-center">
+                        <div class="notifications"></div>
+                        <div class="icon-user"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col-md-2 position-relative">
+                <div class="dash-options">
+                    <ul class="options-list">
+                        <li class="option">
+                            <span class="icons ic-dashboard mr-5"></span>
+                            <p class="txt-optionDash fs-5">Dashboard</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-request mr-5"></span>
+                            <p class="txt-optionDash fs-5">Solicitudes</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-company mr-5" id="tracking"></span>
+                            <p class="txt-optionDash fs-5">Seguimientos</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-calendar mr-5"></span>
+                            <p class="txt-optionDash fs-5">Calendario</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-sms mr-5"></span>
+                            <p class="txt-optionDash fs-5">Mensajes</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-perfil mr-5"></span>
+                            <p class="txt-optionDash fs-5">Mi perfil</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-logout mr-5"></span>
+                            <p class="txt-optionDash fs-5">Salir</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 px-5 py-4 main-content-dash">
+                <div class="content-status-student w-100 d-flex justify-content-between mt-3">
+                    <div class="box-info-student">
+                        <h5>Solicitudes Activas</h5>
+                        <p class="numbers">12</p>
+                        <span class="status">14 Nuevas</span>
+                    </div>
+                    <div class="box-info-student">
+                        <h5>Entrevistas Pendientes</h5>
+                        <P class="numbers">5</P>
+                        <span class="status proximate">3 Próximas</span>
+                    </div>
+                    <div class="box-info-student">
+                        <h5>Cuota Pasante</h5>
+                        <p class="numbers">70/100</>
+                        <span class="status inProgress">70%</span>
+                    </div>
+                </div>  
+                <div class="row mt-5">
+                    <div class="col-12 pb-3 recent-request general-bg-white general-block-notifications">
+                        <div class="py-4">
+                            <h2 class="ms-3">Solicitudes Recientes</h2>
+                        </div>
+                        <div class="offers-company py-4 px-6  d-flex align-items-center justify-content-between border border-start-0 border-end-0">
+                            <span class="icons ic-company icon-section-requested position-absolute"></span>
+                            <div class="info-offers d-flex flex-column">
+                                <p>Giovanny Alexander Quiroz Chica</p>
+                                <span class="main-txt-color fsz-5 fw-light">Tecnologo Desarrollo de Software - CIAF</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="#" class="status inProgress position-static mx-4">Postulado</a>
+                                <p class="date">15/08/2024</p>
+                                <span class="icons arrow-icon position-absolute"></span>
+                            </div>
+                        </div>
+                        <div class="offers-company py-4 px-6  d-flex align-items-center justify-content-between">
+                            <span class="icons ic-company icon-section-requested position-absolute"></span>
+                            <div class="info-offers d-flex flex-column">
+                                <p>David Andres Lopez Rivas - Uniremington</p>
+                                <span class="main-txt-color fsz-5 fw-light">Administrador de empresas</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="#" class="status pending position-static mx-4">Rechazado</a>
+                                <p class="date">01/11/2024</p>
+                                <span class="icons arrow-icon position-absolute"></span>
+                            </div>
+                        </div>
+                        <div class="offers-company py-4 px-6  d-flex align-items-center justify-content-between border border-start-0 border-end-0 border-bottom-0">
+                            <span class="icons ic-company icon-section-requested position-absolute"></span>
+                            <div class="info-offers d-flex flex-column">
+                                <p>Daniel Leandro Gutierrez - UTP</p>
+                                <span class="main-txt-color fsz-5 fw-light">Tecnico Desarrollo de Software</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="#" class="status inProgress position-static mx-4">Postulado</a>
+                                <p class="date">04/02/2024</p>
+                                <span class="icons arrow-icon position-absolute"></span>
+                            </div>
+                        </div>
+                        <div class="offers-company py-4 px-6  d-flex align-items-center justify-content-between border border-start-0 border-end-0 border-bottom-0">
+                            <span class="icons ic-company icon-section-requested position-absolute"></span>
+                            <div class="info-offers d-flex flex-column">
+                                <p>Daniela Velez - Universidad Confamiliar</p>
+                                <span class="main-txt-color fsz-5 fw-light">Contaduría Publica</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="#" class="status pending position-static mx-4">Pendiente</a>
+                                <p class="date">04/02/2024</p>
+                                <span class="icons arrow-icon position-absolute"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 pb-3 general-bg-white general-block-notifications">
+                        <div class="py-4">
+                            <h2 class="ms-3">Notificaciones</h2>
+                        </div>
+                        <div class="offers-company no-hover py-4  d-flex align-items-center border border-start-0 border-end-0  justify-content-between">
+                            <div class="info-offers d-flex flex-column ms-3">
+                                <p>Se acepto nuevo convenio CIAF</p>
+                                <span class="main-txt-color fsz-5 fw-light">Corporación Instituto de Administración y Finanzas - CIAF </span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center justify-content-between">
+                                <p class="date me-4">Hace 1 día</p>
+                            </div>
+                        </div>
+                        <div class="offers-company no-hover d-flex justify-content-between py-4">
+                            <div class="info-offers d-flex flex-column ms-3">
+                                <p class="">Nuevo postulante vacante SST</p>
+                                <span class="main-txt-color fsz-5 fw-light">Nicolas Sanchez Trujillo</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <p class="date me-4">Hace 8 horas</p>
+                            </div>
+                        </div>
+                        <div class="offers-company no-hover d-flex justify-content-between py-4 border border-start-0 border-end-0 border-bottom-0">
+                            <div class="info-offers d-flex flex-column ms-3">
+                                <p class="">Politécnico Grancolombiano - Espera de reunion de seguimiento</p>
+                                <span class="main-txt-color fsz-5 fw-light">Juliana Restrepo</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <p class="date me-4">Hace 12 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadowPopUp">
+            <div class="main-comments border rounded">
+                <h2 class="text-center pb-4">Retroalimentación</h2>
+                <div class="students w-100">
+                    <select name="" id="" class="w-100 border rounded">
+                        <option value="">Escoge el estudiante a evaluar</option>
+                        <option value="">Alexander Jaramillo</option>
+                        <option value="">Luisa Fernanda Montoya</option>
+                        <option value="">Michel Trejos</option>
+                        <option value="">Erick Torres</option>
+                        <option value="">Alejandra Guerra</option>
+                    </select>
+                </div>
+                <div class="txt-comments">
+                    <textarea name="" id="trackingComments" placeholder="Escribe algo..." class="w-100 mt-4 border rounded"></textarea>
+                    <span id="counter">Palabras: 0</span>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

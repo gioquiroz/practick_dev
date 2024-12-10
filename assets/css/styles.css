@@ -1,11 +1,31 @@
 :root {
     --blue1: #001550;
     --white: #FFFFFF;
+    --bg-dash: #F2F3F7;
+    --success: #B5FFCE;
+    --proximate: #FEFFB5;
+    --progress: #b5e4ff;
 }
 
 * {
     font-family: "Kanit", sans-serif;
     color: var(--blue1);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.general-block-notifications {
+    border-radius: 6px;
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.general-bg-white {
+    background-color: var(--white);
 }
 
 .welcomePractick {
@@ -86,4 +106,166 @@ form>label>input {
     height: 45px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, .3)
+}
+
+.dash-options {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.options-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.options-list .option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.options-list .option .icons {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icons.ic-dashboard {
+    background-image: url(../img/icon-book.png);
+}
+
+.icons.ic-request {
+    background-image: url(../img/icon-request.png);
+}
+
+.icons.ic-company {
+    background-image: url(../img/icon-enterprise.png);
+}
+
+.icons.ic-calendar {
+    background-image: url(../img/icon-calendar.png);
+}
+
+.icons.ic-sms {
+    background-image: url(../img/icon-messeges.png);
+}
+
+.icons.ic-perfil {
+    background-image: url(../img/icon-user.png);
+}
+
+nav .content-logo .logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+nav .content-logo .logo .icon-logo {
+    background-image: url(../img/logo_transparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    width: 170px;
+    height: 85px;
+}
+
+nav .inpt-search {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    margin-left: 100px;
+    height: 40px;
+}
+
+nav .inpt-search::placeholder {
+    font-size: 1rem;
+}
+
+.content-nav .util-user .notifications,
+.content-nav .util-user .icon-user {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: inline-block;
+}
+
+.content-nav .util-user .notifications {
+    background-image: url(../img/icon-bell.png);
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.content-nav .util-user .notifications::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #df665def;
+    border-radius: 100%;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+
+.content-nav .util-user .icon-user {
+    background-image: url(../img/icon-user-sigin.png);
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.main-content-dash {
+    background-color: var(--bg-dash)
+}
+
+.box-info-student {
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    width: 32%;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.box-info-student .numbers {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.box-info-student .status {
+    display: block;
+    color: black;
+    font-size: 15px;
+    background-color: var(--success);
+    padding: 4px 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 20px;
+}
+
+.box-info-student .status.proximate {
+    background-color: var(--proximate);
+}
+
+.box-info-student .status.inProgress {
+    background-color: var(--progress);
+}
+
+.recent-request {
+    border-radius: 6px;
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, .5);
 }

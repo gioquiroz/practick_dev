@@ -11,9 +11,130 @@
     <title>Dashboard - Estudiante</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12"></div>
+    <div class="container-fluid h-100">
+        <header>
+            <nav class="d-flex justify-content-between align-items-center py-3">
+                <div class="content-logo d-flex align-items-center">
+                    <div class="logo">
+                        <span class="icon-logo"></span>
+                        <!-- PRACTICK -->
+                    </div>
+                    <input type="search" name=Buscar" id="" class="inpt-search" placeholder="Buscar">
+                </div>
+                <div class="content-nav d-flex justify-content-end  align-items-center w-25">
+                    <div class="util-user d-flex align-items-center">
+                        <div class="notifications"></div>
+                        <div class="icon-user"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row vh-100">
+            <div class="col-md-2">
+                <div class="dash-options">
+                    <ul class="options-list">
+                        <li class="option">
+                            <span class="icons ic-dashboard mr-5"></span>
+                            <p class="txt-optionDash">Dashboard</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-request mr-5"></span>
+                            <p class="txt-optionDash">Solicitudes</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-company mr-5"></span>
+                            <p class="txt-optionDash">Empresas</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-calendar mr-5"></span>
+                            <p class="txt-optionDash">Calendario</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-sms mr-5"></span>
+                            <p class="txt-optionDash">Mensajes</p>
+                        </li>
+                        <li class="option">
+                            <span class="icons ic-perfil mr-5"></span>
+                            <p class="txt-optionDash">Mi perfil</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 px-5 py-4 main-content-dash">
+                <div class="content-status-student w-100 d-flex justify-content-between mt-3">
+                    <div class="box-info-student">
+                        <h5>Solicitudes Activas</h5>
+                        <p class="numbers">12</p>
+                        <span class="status">4 Nuevas</span>
+                    </div>
+                    <div class="box-info-student">
+                        <h5>Entrevistas Pendientes</h5>
+                        <P class="numbers">3</P>
+                        <span class="status proximate">2 Próximas</span>
+                    </div>
+                    <div class="box-info-student">
+                        <h5>Horas Completadas</h5>
+                        <p class="numbers">120/240</>
+                        <span class="status inProgress">En Progreso</span>
+                    </div>
+                </div>  
+                <div class="row mt-5">
+                    <div class="col-12 recent-request general-bg-white general-block-notifications">
+                        <div class="py-4">
+                            <h2>Solicitudes Recientes</h2>
+                        </div>
+                        <div class="offers-company py-4  d-flex align-items-center border border-start-0 border-end-0">
+                            <span class="icons ic-company"></span>
+                            <div class="info-offers d-flex">
+                                <p>TechCorp</p>
+                                <span>Desarrollador Frontend</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="" class="status inProgress">En proceso</a>
+                                <p class="date">15/03/2024</p>
+                                <span class="arrow-icon"></span>
+                            </div>
+                        </div>
+                        <div class="offers-company py-4  d-flex align-items-center">
+                            <span class="icons ic-company"></span>
+                            <div class="info-offers">
+                                <p>DataSystems</p>
+                                <span>Analista de Datos</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <a href="" class="status">Pendiente</a>
+                                <p class="date">12/03/2024</p>
+                                <span class="arrow-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 general-bg-white general-block-notifications">
+                        <div class="py-4">
+                            <h2>Notificaciones</h2>
+                        </div>
+                        <div class="offers-company py-4 d-flex align-items-center d-flex align-items-center border border-start-0 border-end-0">
+                            <div class="info-offers d-flex">
+                                <p>Solicitud Aprobada</p>
+                                <span>TechCorp</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <p class="date">Hace 2 horas</p>
+                            </div>
+                        </div>
+                        <div class="offers-company d-flex align-items-center py-4">
+                            <div class="info-offers d-flex">
+                                <p class="">Nueva Oportunidad</p>
+                                <span>InnovaSoft</span>
+                            </div>
+                            <div class="status-stud-offers d-flex align-items-center">
+                                <p class="date">Hace 5 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
